@@ -1,11 +1,141 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- This is head section-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My second github-repo</title>
+    <title>My Travel Blog</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+      .cls1 {
+        height: 200px;
+        background-image: url(http://surl.li/uygjyw);
+        background-size: 200px;
+        color: whitesmoke;
+      }
+      .forhad {
+        color: brown;
+      }
+      .uddin {
+        background-color: aquamarine;
+      }
+      /* * {
+        background-color: maroon;
+        color: white;
+      } */
+      .place {
+        color: brown;
+        text-decoration: underline;
+        font-display: bold;
+      }
+      p {
+        text-align: justify;
+      }
+    </style>
   </head>
   <body>
-    <h1>I am Forhad Uddin</h1>
+    <header>Welcome to my Blog</header>
+    <!-- This is body section-->
+    <h1 class="forhad" style="text-align: center"><i>My Travel Blog</i></h1>
+    <div class="cls1">
+      <h3 class="forhad uddin" style="text-align: center">
+        My Travel Experience
+      </h3>
+      <p style="padding: 10px">
+        I have traveled to many places in the world. I have visited many
+        countries and cities. I have seen many
+        <span class="place"><b>beautiful places.</b></span> I have met many
+        people. I have tasted many foods. I have learned many things. I have
+        enjoyed my travel experiences.
+      </p>
+      <p style="padding: 10px" id="hidden-paragraph" class="hidden">
+        I have learned many things from my travel experiences. Such as how to
+        swim, how to dive, how to climb, how to hike, how to ski, how to
+        snowboard, how to surf, how to sail, how to fly, how to drive, how to
+        ride, how to walk, how to run, how to jump, how to dance, how to sing,
+        how to play, how to work, how to rest, how to sleep, how to eat, how to
+        drink, how to cook, how to clean, how to wash, how to dry, how to iron,
+        how to fold, how to pack, how to unpack, how to organize, how to plan,
+        how to prepare, how to execute.
+      </p>
+
+      <button id="read-more-btn" style="text-align: left">Read More</button>
+
+      <script>
+        var button = document.getElementById("read-more-btn");
+        var hiddenParagraph = document.getElementById("hidden-paragraph");
+
+        button.addEventListener("click", function () {
+          if (hiddenParagraph.classList.contains("hidden")) {
+            hiddenParagraph.classList.remove("hidden");
+            button.textContent = "Read Less";
+          } else {
+            hiddenParagraph.classList.add("hidden");
+            button.textContent = "Read More";
+          }
+        });
+      </script>
+    </div>
+
+    <span>
+      <p style="text-align: center; font-size: 20px"><b>What i bought</b></p>
+      <ol type="1">
+        <li>
+          books
+          <ul>
+            <li>Travel Guide</li>
+            <li>local Language book</li>
+            <li>map book</li>
+          </ul>
+        </li>
+        <li>pen</li>
+        <li>shirt</li>
+      </ol>
+    </span>
+    <br />
+    <span>
+      <p style="text-align: center; font-size: 20px"><b>What i ate</b></p>
+      <ol type="1">
+        <li>
+          grocery foods
+          <ul>
+            <li>rice</li>
+            <li>fish</li>
+            <li>vegetables</li>
+          </ul>
+        </li>
+        <li>fruits</li>
+        <li>meat, and sea fish</li>
+      </ol>
+      <img src="http://surl.li/ghgxrz" alt="foods" width="304" height="228" />
+      <iframe
+        width="304"
+        height="228"
+        src="https://www.youtube.com/embed/cHBqwj0Ed_I?autoplay=0"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      >
+      </iframe>
+      <a
+        style="
+          background-color: green;
+          width: 304px;
+          height: 228px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          border: 1px solid #ccc;
+          font-size: 30px;
+          color: white;
+        "
+        href="https://youtu.be/3hEm5Y_74U0"
+        target="_blank"
+      >
+        Watch travel video
+      </a>
+    </span>
   </body>
 </html>
